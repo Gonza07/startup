@@ -1,8 +1,8 @@
 //5- JS PRACTICE: Using attribute "hidden" in html part, here we remove it to show the div
 
-$(document).ready(iniciar);
+$(document).ready(start);
 
-function iniciar() {
+function start() {
 
     $("#hiddenDiv").removeAttr("hidden");
 
@@ -47,5 +47,17 @@ function showContent() {
 
 
 /*
- * 8-  
+ * Geting response: we use the XMLHttpRequest to exchange data with a server 
  */
+
+$("#btnCall").click(response);
+
+function response() {
+
+    var getResponse = new XMLHttpRequest();
+
+    getResponse.open("GET", " http://bootcamp.aws.af.cm/welcome/yourname", true);
+
+    $("#result").html(getResponse.responseText);
+
+}
