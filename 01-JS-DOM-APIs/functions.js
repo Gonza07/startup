@@ -1,8 +1,8 @@
 //5- JS PRACTICE: Using attribute "hidden" in html part, here we remove it to show the div
 
-$(document).ready(iniciar);
+$(document).ready(start);
 
-function iniciar() {
+function start() {
 
     $("#hiddenDiv").removeAttr("hidden");
 
@@ -60,4 +60,8 @@ function response() {
 
     $("#result").html(getResponse.responseText);
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master
