@@ -4,7 +4,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html  ng-app>
     <head>
         <title>Portal Cinema</title>
         <meta charset="UTF-8">
@@ -38,7 +38,7 @@ and open the template in the editor.
 
                             </ul>
                         </li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                         <li><a href="">About us</a>
                     </ul>
                 </nav>
@@ -46,19 +46,25 @@ and open the template in the editor.
                 <!-- End of navigation menu --> 
 
             </header>
-            <!--Actors section-->
+
             <section>
-                <article class="artActores">
+                <p id="addResult"></p>
+                <form>
+                    <h2>Add a movie!</h2>
 
-                </article>
+                    <input type="text" id="txtMovieTitle" placeholder="Title"><br>
+                    <input type="text" id="txtMovieYear" placeholder="Year"><br>
+                    <input type="text" id="txtMovieGenere" placeholder="Genre">
+                    <input type="text" id="txtProtagonists" placeholder="Protagonists">
 
-                <article class="artActores">
+                    <textarea id="txtaDescription" rows="4" cols="50" placeholder="Add a description">
 
-                </article>
+                    </textarea> 
 
-                <article class="artActores">
+                    <input type="button" id="btnAdd" value="Add">
 
-                </article>
+
+                </form>
             </section>
 
 
@@ -71,9 +77,9 @@ and open the template in the editor.
                 </ul>
             </footer>
         </div>
-        <script src="jquery.js" type="text/javascript"></script>
-        <script src="funcionesProyecto.js" type="text/javascript"></script>
-        <script src="movies.js" type="text/javascript"></script>
+        <script src="../JavaScript/angular.js" type="text/javascript"></script>
+        <script src="../JavaScript/jquery.js" type="text/javascript"></script>
+        <script src="../JavaScript/funcionesProyecto.js" type="text/javascript"></script>
     </body>
 
 </html>
